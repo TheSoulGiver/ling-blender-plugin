@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "ling.blender",
+  "name": "Blender",
+  "version": "1.0.0",
+  "description": "在本机右栏打开 Blender，创建三维场景、渲染图片和 MP4 动画，随时接管和归还。",
+  "open": { "kind": "local", "software": "blender" },
+  "operation": { "kind": "mcp", "transport": "stdio", "driver": "blender-mcp" },
+  "display": { "kind": "window" },
+  "permissions": {
+    "files": [{ "path": "workspace", "access": "read-write" }],
+    "network": [],
+    "software": ["blender"]
+  }
+}
